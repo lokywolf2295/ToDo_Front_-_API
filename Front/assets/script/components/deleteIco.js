@@ -1,4 +1,4 @@
-import { deleteTask } from "./data/deleteTask.js";
+import { deleteTask } from "./../data/deleteTask.js";
 import { displayTasks } from "./displayTasks.js";
 
 

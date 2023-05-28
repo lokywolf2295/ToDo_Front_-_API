@@ -25,13 +25,13 @@ public class Task {
     private Long id;
     @Column(name = "title", nullable = false, length = 256)
     private String title;
-    @Column(name = "created_date", nullable = false, length = 15)
+    @Column(name = "created_date", nullable = false)
     private LocalDateTime createdDate;
-    @Column(name = "date", nullable = false, length = 15)
+    @Column(name = "date", nullable = false)
     private LocalDate date;
-    @Column(name = "time", nullable = false, length = 15)
+    @Column(name = "time", nullable = false)
     private LocalTime time;
-    @Column(name = "finished", nullable = false, length = 15)
+    @Column(name = "finished", nullable = false)
     private boolean finished;
     @Column(name = "enable")
     private boolean enabled = true;

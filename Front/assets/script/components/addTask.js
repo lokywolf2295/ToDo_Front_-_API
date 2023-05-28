@@ -45,7 +45,7 @@ export const addTask = (event) => {
 };
 
 //Arrow function o funciones flechas / anonimas
-export const createTask = ({ id, title, description, _, date }) => {
+export const createTask = ({ id, title, time, _, date }) => {
 
   const task = document.createElement("li"); //creo un elemento li
   task.classList.add("card"); //agregamos una clase al task
@@ -68,9 +68,9 @@ export const createTask = ({ id, title, description, _, date }) => {
   taskContent.appendChild(titleTask); //agregamos al contenido el titleTask
 
   const dateElement = document.createElement("span"); //creo el elemento span para la fecha
-  //dateElement.innerHTML = time; //le agrego al span la fecha obtenida
+  dateElement.innerHTML = time; //le agrego al span la hora obtenida
   task.appendChild(taskContent); //agrego al task el div con la info ingresada en el input
-  //task.appendChild(dateElement); //agrego al task la fecha
+  task.appendChild(dateElement); //agrego al task la fecha
   task.appendChild(createDelIcon(id)); //agrego al contenido el icono del basurero
   return task;
 };
