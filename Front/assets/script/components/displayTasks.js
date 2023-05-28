@@ -1,7 +1,7 @@
 import { createTask } from "./addTask.js";
 import dateElement from "./dateElement.js";
-import { uniqueDates, orderDates } from "../services/date.js";
-import { getTasks } from "./data/getTasks.js";
+import { uniqueDates, orderDates } from "../service/date.js";
+import { getTasks } from "./../data/getTasks.js";
 
 export const displayTasks = async () => {
   let tasks = await getTasks();
