@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController /*Anotación para confirmar de que se trata de un controlador el cual será revisado por swagger*/
-@RequestMapping("/tasks")
+@RequestMapping("api/v1/tasks")
 public class TaskController { //esta capa solo se comunica con la capa de servicio
 
     private final TaskService taskService;
