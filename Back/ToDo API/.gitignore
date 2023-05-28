@@ -37,3 +37,4 @@ build/
 
 ### Project images ###
 /Capturas/
+/.mvn/
