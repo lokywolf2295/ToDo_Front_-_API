@@ -16,7 +16,7 @@ import java.time.LocalTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "task")
-@SQLDelete(sql = "UPDATE personas SET enable = false WHERE id = ?")
+@SQLDelete(sql = "UPDATE task SET enable = false WHERE id = ?")
 @Where(clause = "enable = true")
 public class Task {
     @Id
