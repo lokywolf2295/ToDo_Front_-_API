@@ -18,7 +18,7 @@ public class CorsConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(Arrays.asList("*")); //(*) habilita todos los origenes
-        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
+        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")); //habilita todos los metodos
         // Agrega otros encabezados y opciones de configuración si es necesario
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();

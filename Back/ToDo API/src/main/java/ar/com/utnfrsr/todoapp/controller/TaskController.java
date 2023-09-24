@@ -29,7 +29,7 @@ public class TaskController { //esta capa solo se comunica con la capa de servic
     }
 
     @PatchMapping("/mark_as_finished/{id}")
-    public ResponseEntity<Void> markAsFiniched(@PathVariable("id") Long id) {
+    public ResponseEntity<Void> markAsFinished(@PathVariable("id") Long id) {
         this.taskService.updateTaskAsFinished(id);
         return ResponseEntity.noContent().build(); //luego de que se ejecute la tarea devuelve un 204 siempre
     }
