@@ -34,12 +34,17 @@ public class TaskService {
 
     //actualiza el estado de la tarea
     @Transactional
-    public void updateTaskAsFinished(Long id) {
+    public void updateTaskAsFinished(Long id, boolean finished) {
         Optional<Task> optionalTask = this.repository.findById(id);
         if (optionalTask.isEmpty()) { //si no hay taréa
             throw new ToDoExceptions("Task not found", HttpStatus.NOT_FOUND);
         }
-       this.repository.markTaskAsFinished(id);
+        if (finished){
+            finished= false;
+        }else {
+            finished = true;
+        }
+        this.repository.markTaskAsFinished(id, finished);
     }
 
     //elimina el task mediante su id
