@@ -28,28 +28,22 @@ export const addTask = (event) => {
   const taskObj = {
     //crea una variable que almacena una clave y su valor
     title, //texto
-    dateFormat, //fecha
+    date:dateFormat, //fecha
     time, //hora
     finished, //para el check
-    //id: uuid.v4(),
   };
 
   console.log(taskObj);
 
   list.innerHTML = ""; //por cada vez que se agreguen tareas nuevas se vacía la estructura
-
-  //sessionStorage.setItem("tasks", JSON.stringify(taskObj));
   
   sendTask(taskObj);
-  const taskList = JSON.parse(localStorage.getItem("tasks")) || []; //creamos un arreglo
-  taskList.push(taskObj); //agregamos cada ingreso a el arreglo  
-  localStorage.setItem("tasks", JSON.stringify(taskList)); //pasamos la lista como parametro a almacenar
 
   displayTasks(); //llama a la función que agrupa las fechas
 };
 
 //Arrow function o funciones flechas / anonimas
-export const createTask = ({ id, title, time,finished, _, date }) => {
+export const createTask = ({ id, title, time,finished}) => {
   
   const task = document.createElement("li"); //creo un elemento li
   task.classList.add("card"); //agregamos una clase al task
