@@ -3,11 +3,10 @@ import { path } from "./path.js";
 export const sendTask = (taskObj) => {
   console.log(taskObj) 
   const url = `${path}create`;
-  //const url = `${path}create/{"title":"${taskObj.title}","date":"${taskObj.dateFormat}","time":"${taskObj.time}"}`;
   console.log(url);
   fetch(url, {
     method: "POST",
-    body: JSON.stringify(taskObj).toString(), // data can be `string` or {object}!
+    body: JSON.stringify(taskObj), 
     headers: {
       "Content-Type": "application/json",
     },
