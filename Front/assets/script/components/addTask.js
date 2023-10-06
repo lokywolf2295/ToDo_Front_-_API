@@ -12,7 +12,7 @@ export const addTask = (event) => {
 
   const title = input.value; //guardamos la información del input
   const date = calendar.value; //guardamos la información de la fecha
-  const dateFormat = moment(date).format("DD-MM-YYYY");
+  const dateFormat = moment(date).format("yyyy-MM-DD");
   const time = moment(date).format("HH:mm");
 
   if (input == "" || date == "") {
