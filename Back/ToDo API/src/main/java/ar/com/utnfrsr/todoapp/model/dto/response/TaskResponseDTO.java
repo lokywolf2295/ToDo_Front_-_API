@@ -12,4 +12,5 @@ public class TaskResponseDTO {
     private String title;
     private Date date;
     private LocalTime time;
+    private boolean finished;
 }
