@@ -3,8 +3,8 @@ spring:
     name: todo-app
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password:
+    username: ${DB_USER}
+    password: ${DB_PASS}
     url: "jdbc:mysql://localhost:3306/db_todo_api?createDatabaseIfNotExist=true"
   jpa:
     show-sql: true
