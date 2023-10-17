@@ -2,7 +2,6 @@ import { path } from "../data/path.js";
 
 export const deleteTask = async (id) => {
   const url = path + "delete/" + id;
-  //console.log(url);
   fetch(url, {
     method: "DELETE",
   })

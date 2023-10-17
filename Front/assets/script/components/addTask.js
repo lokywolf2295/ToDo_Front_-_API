@@ -33,12 +33,9 @@ export const addTask = (event) => {
     finished, //para el check
   };
 
-  console.log(taskObj);
-
   list.innerHTML = ""; //por cada vez que se agreguen tareas nuevas se vacía la estructura
   
-  sendTask(taskObj);
-
+  sendTask(taskObj); //llama a la función que envía la tarea a la API
   displayTasks(); //llama a la función que agrupa las fechas
 };
 

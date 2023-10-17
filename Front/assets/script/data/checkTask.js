@@ -2,7 +2,6 @@ import { path } from "../data/path.js";
 
 export const checkTask = async (id,finished) => {
   const url = path + "mark_as_finished/" + id+"/"+finished;
-  console.log(url);
   fetch(url, {
     method: "PATCH",
   })

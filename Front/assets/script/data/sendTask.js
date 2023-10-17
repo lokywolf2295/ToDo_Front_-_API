@@ -1,9 +1,7 @@
 import { path } from "./path.js";
 
 export const sendTask = (taskObj) => {
-  console.log(taskObj) 
   const url = `${path}create`;
-  console.log(url);
   fetch(url, {
     method: "POST",
     body: JSON.stringify(taskObj), 
