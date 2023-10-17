@@ -15,6 +15,6 @@ public interface TastkRepository extends JpaRepository<Task, Long> { //<nombre d
      * @param id recibe el ide para pasarlo a la query nativa
      */
     @Modifying //demuestra que la query es de actualización
-    @Query(value = "UPDATE TASK SET FINISHED=true WHERE ID=:id", nativeQuery = true)
-    public void markTaskAsFinished(@Param("id") Long id);
+    @Query(value = "UPDATE TASK SET FINISHED=:finished WHERE ID=:id", nativeQuery = true)
+    public void markTaskAsFinished(@Param("id") Long id, @Param("finished") boolean finished);
 }

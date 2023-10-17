@@ -1,28 +1,18 @@
 import { path } from "../data/path.js";
 
-export const deleteTask = async (id) => {
-  const url = path + "delete/" + id;
+export const checkTask = async (id,finished) => {
+  const url = path + "mark_as_finished/" + id+"/"+finished;
   fetch(url, {
-    method: "DELETE",
+    method: "PATCH",
   })
     .then((res) => {
       if (res.ok) {
-        Swal.fire({
-          //luego de copiar aparece un pop up de exito
-          position: "center",
-          icon: "success",
-          title: "Tarea eliminada",
-          showConfirmButton: false,
-          timer: 2500,
-        });
-        setTimeout(() => {
-          window.location.href = "index.html";
-        }, 2500);
+        window.location.href = "index.html";
       } else {
         Swal.fire({
           position: "center",
           icon: "error",
-          title: "No se eliminó correctamente",
+          title: "No se actualizó correctamente",
           showConfirmButton: false,
           timer: 1500,
         });

@@ -5,7 +5,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${DB_USER}
     password: ${DB_PASS}
-    url: "jdbc:mysql://localhost:3306/db_todo_api"
+    url: "jdbc:mysql://localhost:3306/db_todo_api?createDatabaseIfNotExist=true"
   jpa:
     show-sql: true
     database: mysql
