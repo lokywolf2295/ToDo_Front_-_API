@@ -101,7 +101,7 @@ Entiendase que como id se debe enviar el "ID" de la tarea que se desea eliminar.
 
 Para el testeo de la API se utilizó la herramienta Postman. 
 
-Para ello comparto el Postman que tiene todas las pruebas realizadas para la API. Se puede descargar desde el siguiente link: https://github.com/lokywolf2295/ToDo_Front_-_API/Tasks.postman_collection.json
+Para ello comparto el Postman que tiene todas las pruebas realizadas para la API. Se puede descargar desde el siguiente link: [https://github.com/lokywolf2295/ToDo_Front_-_API/Tasks.postman_collection.json](https://github.com/lokywolf2295/ToDo_Front_-_API/blob/test/Tasks.postman_collection.json)
 
 ![Postman](https://i.postimg.cc/XNk1ZVS6/Postman.png)
 ### Documentación de la API
