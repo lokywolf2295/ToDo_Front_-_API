@@ -117,3 +117,7 @@ En el Frontend se utilizó HTML, CSS y JavaScript para la creación de la págin
 Haciendo que esta página sea estática pero si responsive.
 
 ![Frontend](https://i.postimg.cc/sDSYBmZQ/Frontend.png)
+
+### Para correr la app
+
+Uso la extensión de Live Server para poder correr la aplicación en un servidor local y que permite ver los cambios que se realizan en el codigo, de manera automática luego de guardar los cambios y sin necesidad de volver a correr la aplicación nuevamente.
