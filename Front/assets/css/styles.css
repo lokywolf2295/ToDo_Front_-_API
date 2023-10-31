@@ -146,3 +146,20 @@ form {
   width: 100%;
   padding: 15px;
 }
+
+/*Agregamos las Media Querrys para que todo sea responsive*/
+
+@media screen and (max-width: 1424px) {
+  .mainCard {
+    width: 60vw;
+  }
+  .inputForm {
+    width: 80%;
+  }
+  input{
+    margin: 2%;
+  }
+  .btnCreate {
+    width: 80%;
+  }
+}
