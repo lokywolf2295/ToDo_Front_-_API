@@ -117,3 +117,9 @@ En el Frontend se utilizó HTML, CSS y JavaScript para la creación de la págin
 Haciendo que esta página sea estática pero si responsive.
 
 ![Frontend](https://i.postimg.cc/sDSYBmZQ/Frontend.png)
+
+### De donde saco los ejemplos de alertas, botones, etc?
+
+Usando la página SweetAlert2: https://sweetalert2.github.io/#examples, usamos los ejemplos que nos provee la página y los adaptamos a nuestro proyecto. Esto siempre va a depender de que necesidades de efectos tenemos.
+
+![SweetAlert2](https://i.postimg.cc/dVVz4ws4/Sweet-Alert2.png)
