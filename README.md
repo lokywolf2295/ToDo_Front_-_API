@@ -118,6 +118,12 @@ Haciendo que esta página sea estática pero si responsive.
 
 ![Frontend](https://i.postimg.cc/sDSYBmZQ/Frontend.png)
 
+### De donde saco los ejemplos de alertas, botones, etc?
+
+Usando la página SweetAlert2: https://sweetalert2.github.io/#examples, usamos los ejemplos que nos provee la página y los adaptamos a nuestro proyecto. Esto siempre va a depender de que necesidades de efectos tenemos.
+
+![SweetAlert2](https://i.postimg.cc/dVVz4ws4/Sweet-Alert2.png)
+
 ### Para correr la app
 
 Uso la extensión de Live Server para poder correr la aplicación en un servidor local y que permite ver los cambios que se realizan en el codigo, de manera automática luego de guardar los cambios y sin necesidad de volver a correr la aplicación nuevamente.
