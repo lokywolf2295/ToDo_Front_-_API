@@ -24,14 +24,14 @@ public class TaskController { //esta capa solo se comunica con la capa de servic
     }
 
     @GetMapping("/all")
-    public ResponseEntity<List<TaskResponseDTO>> findAll(){
+    public ResponseEntity<List<TaskResponseDTO>> findAll() {
         List<TaskResponseDTO> tasks = taskService.findAll();
         return ResponseEntity.ok(tasks);
     }
 
     @PatchMapping("/mark_as_finished/{id}/{finished}")
     public ResponseEntity<Void> markAsFinished(@PathVariable("id") Long id, @PathVariable("finished") boolean finished) {
-        this.taskService.updateTaskAsFinished(id,finished);
+        this.taskService.updateTaskAsFinished(id, finished);
         return ResponseEntity.noContent().build(); //luego de que se ejecute la tarea devuelve un 204 siempre
     }
 
